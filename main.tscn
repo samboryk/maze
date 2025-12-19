@@ -8,23 +8,23 @@
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0xm2m")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 offset_left = -40.0
 offset_top = -20.0
 offset_right = 1320.0
 offset_bottom = 760.0
-color = Color(0.886774, 0.974966, 0.929952, 1)
+color = Color(0.92549, 0.945098, 0.956863, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 24.0
+offset_left = 20.0
 offset_top = 20.0
-offset_right = 700.0
+offset_right = 720.0
 offset_bottom = 64.0
-text = "Guide the dot to the red goal without touching the black walls. Press R to restart."
+text = "Guide the dot to the red square without touching the black walls. Press R to restart."
 theme_override_font_sizes/font_size = 24
 
 [node name="Dot" parent="." instance=ExtResource("1_luovg")]
-position = Vector2(80, 360)
+position = Vector2(100, 360)
 
 [node name="TopBoundary" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(-20, 140)
@@ -34,29 +34,33 @@ scale = Vector2(7, 0.4)
 position = Vector2(-20, 520)
 scale = Vector2(7, 0.4)
 
-[node name="MidBlock" parent="." instance=ExtResource("1_ig7tw")]
+[node name="LeftBoundary" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(-20, 140)
+scale = Vector2(0.4, 4.5)
+
+[node name="RightBoundary" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(1140, 140)
+scale = Vector2(0.4, 4.5)
+
+[node name="FirstTurn" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(260, 280)
-scale = Vector2(1.5, 1.2)
+scale = Vector2(1.4, 1.0)
 
 [node name="VerticalDivider" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(520, 180)
-scale = Vector2(0.3, 4.5)
-
-[node name="UpperShelf" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(740, 160)
-scale = Vector2(1.8, 0.4)
+position = Vector2(500, 200)
+scale = Vector2(0.4, 3.5)
 
 [node name="LowerShelf" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(740, 400)
-scale = Vector2(1.8, 0.4)
-
-[node name="RightGate" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(980, 200)
-scale = Vector2(0.3, 3.0)
-
-[node name="FinalCap" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(1020, 320)
+position = Vector2(700, 420)
 scale = Vector2(1.6, 0.4)
 
-[node name="Area2D" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(1150, 220)
+[node name="UpperShelf" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(700, 180)
+scale = Vector2(1.6, 0.4)
+
+[node name="FinalGate" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(950, 200)
+scale = Vector2(0.3, 3.5)
+
+[node name="Finish" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(1080, 360)

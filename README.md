@@ -1,3 +1,7 @@
-# maze
+# Scary Maze
 
-A tiny "scary maze" made with Godot. Guide the black dot to the red goal without touching the black walls. If you collide, a jumpscare screen flashes before the game closes. Press **R** any time to restart the level.
+Move the black dot with your mouse from the left side to the red square on the right without touching any walls.
+
+Controls:
+- Move the mouse to guide the dot.
+- Press **R** to restart if you hit a wall or want to try again.

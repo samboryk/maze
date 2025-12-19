@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var dot = $Dot
 
-const START_POSITION := Vector2(80, 360)
+const START_POSITION := Vector2(100, 360)
 
 func _ready():
     Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)

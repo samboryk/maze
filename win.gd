@@ -2,8 +2,6 @@ extends Control
 
 func _ready():
     Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-    if $AudioStreamPlayer.stream:
-        $AudioStreamPlayer.play()
 
 func _process(_delta):
     if Input.is_key_pressed(KEY_R):
